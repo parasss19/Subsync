@@ -2,13 +2,18 @@
 
 @import "tailwindcss";
 
+@theme {
+  /* Custom breakpoints */
+  --breakpoint-smd: 850px;
+}
+
+
 @layer base {
-.my_container{
+  .my_container {
     @apply max-w-4xl mx-auto
-}
+  }
 
-.font_instrument {
-  font-family: 'Instrument Serif', serif;
-}
-
+  .font_instrument {
+    font-family: 'Instrument Serif', serif;
+  }
 }
