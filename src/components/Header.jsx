@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router-dom';
-import { CalendarSync } from 'lucide-react';
+import logo from '../assets/logo.svg'
 
 const Header = () => {
   const navigate = useNavigate();
@@ -19,7 +19,8 @@ const Header = () => {
         onClick={() => navigate("/")}
         className="font_instrument flex gap-2 items-center justify-center cursor-pointer italic text-lg font-medium text-white "
       >
-        <CalendarSync/> 
+        {/* <CalendarSync/>  */}
+        <img src={logo} alt="logo image" className='w-7 h-7'/>
         <span className="font-medium tracking-wider text-xl">Subsync</span> 
       </div>
 

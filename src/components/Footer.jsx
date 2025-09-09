@@ -2,7 +2,7 @@ import { FiGithub } from "react-icons/fi";
 import { FaXTwitter } from "react-icons/fa6";
 import Peerlist from "../assets/Peerlist.png";
 import { useNavigate } from "react-router-dom";
-import { CalendarSync } from "lucide-react";
+import logo from '../assets/logo.svg'
 
 const Footer = () => {
   const navigate = useNavigate();
@@ -14,9 +14,9 @@ const Footer = () => {
           {/* Logo */}
           <div
             onClick={() => navigate("/")}
-            className="cursor-pointer mx-3 font_instrument italic flex gap-1 items-center justify-center"
+            className="cursor-pointer mx-3 font_instrument italic flex gap-2 items-center justify-center"
           >
-            <CalendarSync/> 
+            <img src={logo} alt="logo image" className='w-7 h-7'/>
             <span className="text-white font-bold text-[17px] sm:text-[21px]"> Subsync</span>
           </div>
 
