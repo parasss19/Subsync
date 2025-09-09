@@ -9,12 +9,12 @@ const Footer = () => {
   
   return (
     <footer className="relative text-white overflow-hidden py-8">
-      <div className="relative z-10 max-w-7xl mx-auto w-full px-6 text-sm mb-30">
+      <div className="relative z-10 max-w-7xl mx-auto w-full px-6 text-sm mb-20 sm:mb-30">
         <div className="mx-2 flex flex-col gap-4 sm:flex-row justify-between items-center">
           {/* Logo */}
           <div
             onClick={() => navigate("/")}
-            className="cursor-pointer mx-3 font_instrument flex gap-1 items-center justify-center"
+            className="cursor-pointer mx-3 font_instrument italic flex gap-1 items-center justify-center"
           >
             <CalendarSync/> 
             <span className="text-white font-bold text-[17px] sm:text-[21px]"> Subsync</span>
@@ -72,13 +72,19 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* Gradient background covering whole footer */}
+
       <div className="absolute inset-0 z-0">
+        {/* Gradient background covering whole footer */}
         <div className="w-full h-full bg-gradient-to-t from-[#050505] via-[#FF8C00] to-transparent opacity-90"></div>
-        <div className="absolute bottom-[-3rem] left-1/2 -translate-x-1/2 text-[10rem] md:text-[12rem] font-bold text-white/10 select-none pointer-events-none leading-none">
+
+        {/* Watermark text */}
+        <div className="absolute bottom-[-10px] sm:bottom-[-2rem] left-1/2 -translate-x-1/2
+                  text-[5rem] sm:text-[9rem] md:text-[11rem] 
+                  font-bold text-white/10 select-none pointer-events-none leading-none">
           Subsync
         </div>
       </div>
+
     </footer>
 
   );

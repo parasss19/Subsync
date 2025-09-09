@@ -15,11 +15,6 @@ const faqs = [
       "Yes! SubSync is free to install and use for managing subscriptions, tracking renewals, and receiving reminders.",
   },
   {
-    title: "How does SubSync capture subscriptions?",
-    content:
-      "When capture is triggered, SubSync reads the current page to detect plan name, price, billing cycle, and renewal date, then saves it locally for tracking.",
-  },
-  {
     title: "Does SubSync store my data in the cloud?",
     content:
       "No, Data stays on your device, not our servers. Your subscription data and settings are stored locally in your browser.",
@@ -33,11 +28,6 @@ const faqs = [
     title: "Will I get renewal reminders?",
     content:
       "Yes. SubSync can notify before renewals (e.g., 7, 3, and 1 day prior). You can customize reminder days in Settings.",
-  },
-  {
-    title: "Which sites does SubSync support?",
-    content:
-      "SubSync works across most billing and subscription pages. It can also use AI to interpret page content for new or unfamiliar layouts.",
   },
   {
     title: "Can I import or export my data?",
@@ -62,8 +52,8 @@ const faqs = [
 
 
   return (
-    <div className="relative z-10 max-w-4xl mx-auto w-full px-6 pb-6">
-      <h3 className="text-xl text-white font-semibold mb-4">FAQ's</h3>
+    <div className="relative z-10 mt-10 mb-5 max-w-4xl mx-auto w-full px-6 pb-6">
+      <h3 className="text-2xl text-white mb-4 text-center font_instrument tracking-wider">Frequently Asked Questions</h3>
 
       {faqs.map((faq, index) => (
         <div
