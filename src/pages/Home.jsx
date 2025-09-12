@@ -1,5 +1,5 @@
 import Accordian from '../components/Accordian'
-import Chrome from '../assets/Chrome.svg';
+import Chrome from '../assets/chrome.svg';
 import netflix from '../assets/netflix.svg';
 import notion from '../assets/notion.svg'
 // import { ArcadeEmbed } from '../components/ArcadeEmbed';
