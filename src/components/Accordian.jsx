@@ -52,26 +52,39 @@ const faqs = [
 
 
   return (
-    <div className="relative z-10 mt-10 mb-5 max-w-4xl mx-auto w-full px-6 pb-6">
-      <h3 className="text-2xl text-white mb-4 text-center font_instrument tracking-wider">Frequently Asked Questions</h3>
-
-      {faqs.map((faq, index) => (
-        <div
-          key={index}
-          className="border-b border-white/10 py-4"
-        >
-          <button
-            onClick={() => toggleAccordion(index)}
-            className="cursor-pointer w-full text-left text-white flex justify-between items-center"
-          >
-            <span className="font-medium">{faq.title}</span>
-            <span>{openIndex === index ? "−" : "+"}</span>
-          </button>
-          {openIndex === index && (
-            <p className="mt-2 text-sm text-gray-300">{faq.content}</p>
-          )}
+    <div className="relative z-10 mt-10 mb-5 max-w-6xl mx-auto w-full px-6 pb-6">
+      <div className="flex flex-col md:flex-row md:gap-12">
+        {/* Left side heading */}
+        <div className="md:w-1/3 mb-6 md:mb-0">
+          <h3 className="text-2xl text-white font_instrument tracking-wider text-center md:text-left">
+            Frequently Asked Questions
+          </h3>
+          <p className="mt-2 text-gray-400 text-sm font_instrument tracking-wider text-center md:text-left">
+            Everything you need to know about Instantly in one place.
+          </p>
         </div>
-      ))}
+
+        {/* Right side accordion */}
+        <div className="md:w-2/3">
+          {faqs.map((faq, index) => (
+            <div
+              key={index}
+              className="border-b border-white/10 py-4"
+            >
+              <button
+                onClick={() => toggleAccordion(index)}
+                className="cursor-pointer w-full text-left text-white flex justify-between items-center"
+              >
+                <span className="font-medium">{faq.title}</span>
+                <span>{openIndex === index ? "−" : "+"}</span>
+              </button>
+              {openIndex === index && (
+                <p className="mt-2 text-sm text-gray-300">{faq.content}</p>
+              )}
+            </div>
+          ))}
+        </div>
+      </div>
     </div>
   )
 }

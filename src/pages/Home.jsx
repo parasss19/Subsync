@@ -2,7 +2,7 @@ import Accordian from '../components/Accordian'
 import Chrome from '../assets/Chrome.svg';
 import netflix from '../assets/netflix.svg';
 import notion from '../assets/notion.svg'
-import { ArcadeEmbed } from '../components/ArcadeEmbed';
+// import { ArcadeEmbed } from '../components/ArcadeEmbed';
 import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
 import { useEffect } from 'react';
 import gpt from '../assets/gpt.svg'
@@ -11,7 +11,6 @@ import cursor from '../assets/cursor.svg'
 import claude from '../assets/claude.svg'
 import FeaturesBento from '../components/FeaturesBento';
 import HowToUse from '../components/HowToUse';
-import { Clock } from 'lucide-react';
 
 const Home = () => {
   //tracking cursor
@@ -130,10 +129,10 @@ const Home = () => {
       </motion.div>
 
       {/* How to use video*/}
-      <div className='flex flex-col gap-4 '>
+      {/* <div className='flex flex-col gap-4 '>
         <ArcadeEmbed/>
         <span className='text-sm font-bold text-white/90 bg-gray-600 w-fit mx-auto rounded-lg px-2 py-1'>Interactive Tutorial</span>
-      </div>
+      </div> */}
 
       {/* Features */}
       <FeaturesBento/>
