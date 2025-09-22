@@ -1,61 +1,61 @@
-// HowToUse.jsx
-import Chrome from '../assets/chrome.svg';
 import { Download, BellRing, Brain, Settings2, CheckCircle2, LayoutGrid } from "lucide-react";
-import { FaChrome } from "react-icons/fa";
 
 
 export default function HowToUse() {
 
-  const steps = [
+  // const useFlow = [
+  //   {
+  //     icon: LayoutGrid,
+  //     title: "Open the dashboard",
+  //     desc: "Click the Subsync icon to view all subscriptions, totals, and upcoming renewals.",
+  //   },
+  //   {
+  //     icon: Brain,
+  //     title: "Capture from any billing page",
+  //     desc: "On a billing/subscription page, click Capture. Subsync reads plan, price, cycle, and renewal date.",
+  //     tip: "Enable AI for smarter, faster extraction on unfamiliar pages.",
+  //   },
+  //   {
+  //     icon: BellRing,
+  //     title: "Get smart reminders",
+  //     desc: "Subsync sends Chrome notifications 7, 3, and 1 day before renewal, and on renewal day.",
+  //     tip: "Customize reminder days in Settings.",
+  //   },
+  // ];
+
+    const useFlow = [
     {
-      icon: FaChrome,
-      title: "Open the Chrome Web Store",
-      desc: "Go to the Subsync Subscription Manager page and click Add to Chrome.",
-      note: "You may need to sign in to your Google account.",
+      icon: Settings2,
+      title: "Setup your reminders",
+      desc: "Go to Settings, add your email and reminder days to get notifications before subscription renewals.",
     },
     {
       icon: Download,
-      title: "Install the extension",
-      desc: "Confirm permissions and pin Subsync to your toolbar for quick access.",
-      note: "Click the puzzle icon and pin Subsync.",
+      title: "Add subscriptions",
+      desc: "Go to Add page to add subscriptions manually or using the Smart Capture AI button.",
+      tip: "You need to add your Gemini API key to enable AI capture.",
     },
     {
-      icon: Settings2,
-      title: "Set up preferences",
-      desc: "Open Subsync → Settings to pick reminder days and optionally add your AI key.",
-      note: "AI capture is optional and can be disabled anytime.",
+      icon: CheckCircle2,
+      title: "Manage subscriptions",
+      desc: "Check your subscriptions on the Subscriptions page where you can edit details, pause/resume reminders, or delete them.",
     },
-  ];
-
-  const useFlow = [
     {
       icon: LayoutGrid,
-      title: "Open the dashboard",
-      desc: "Click the SubList icon to view all subscriptions, totals, and upcoming renewals.",
-    },
-    {
-      icon: Brain,
-      title: "Capture from any billing page",
-      desc: "On a billing/subscription page, click Capture. SubList reads plan, price, cycle, and renewal date.",
-      tip: "Enable AI for smarter, faster extraction on unfamiliar pages.",
-    },
-    {
-      icon: BellRing,
-      title: "Get smart reminders",
-      desc: "SubList sends Chrome notifications 7, 3, and 1 day before renewal, and on renewal day.",
-      tip: "Customize reminder days in Settings.",
+      title: "View dashboard",
+      desc: "See all your subscriptions in the Dashboard with totals, active, and upcoming subscriptions and other analytics",
     },
   ];
 
   return (
     <section className="mx-auto my-20 max-w-6xl px-6">
       {/* Header */}
-      <div className="mx-auto max-w-2xl text-center">
+      {/* <div className="mx-auto max-w-2xl text-center">
         <h2 className="font-[Geist] text-3xl font-bold text-white sm:text-4xl"> How to install  </h2>
-      </div>
+      </div> */}
 
       {/* How to Install Steps */}
-      <div className="mt-10 grid grid-cols-1 gap-4 md:grid-cols-3">
+      {/* <div className="mt-10 grid grid-cols-1 gap-4 md:grid-cols-3">
         {steps.map((s, i) => {
           const Icon = s.icon;
           return (
@@ -78,7 +78,7 @@ export default function HowToUse() {
             </div>
           );
         })}
-      </div>
+      </div> */}
 
       {/* How to use steps */}
       <div id="howToUse" className="mt-14  scroll-mt-24">
@@ -86,7 +86,7 @@ export default function HowToUse() {
           <h2 className="font-[Geist] text-3xl font-bold text-white sm:text-4xl"> How to use  </h2>
         </div>
         
-        <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
           {useFlow.map((u, i) => {
             const Icon = u.icon;
             return (
@@ -110,18 +110,6 @@ export default function HowToUse() {
             );
           })}
         </div>
-      </div>
-
-      {/* CTA btn*/}
-      <div className="mt-8  text-center">
-        <button
-          onClick={() => navigate("#")}
-          className="cursor-pointer bg-black/60 text-yellow-300 text-sm sm:text-lg px-3 py-2 sm:px-4 sm:py-2 rounded-lg shadow-md transition-transform duration-150 active:scale-95"
-        >
-          <span className='tracking-wider flex items-center font-[Geist] text-xl font-medium justify-center gap-2'>
-            Add to <img src={Chrome} alt="chrome" className='w-5 h-5'/> its's Free
-          </span>
-        </button>
       </div>
     </section>
   );
