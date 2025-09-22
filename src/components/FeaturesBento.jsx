@@ -1,26 +1,34 @@
-import { Brain, BellRing, ShieldCheck, ArrowDownUp } from "lucide-react";
+import { Brain, BellRing, ShieldCheck, ArrowDownUp, Mail, Edit3, Trash2 } from "lucide-react";
 
 
 const features = [
   {
-    title: "AI powered Auto capture",
-    desc: "One click extraction of plan name, price, billing cycle, and renewal date from billing pages.",
+    title: "Flexible Subscription Management",
+    desc: "Add subscriptions manually without an API key, or use your Google Gemini API key for smart auto-capture of details.",
     icon: Brain,
     accent: "from-cyan-500/20 to-blue-500/10",
-    badge: "AI",
+    badge: "AI + Manual",
     span: "col-span-2 sm:col-span-2",
   },
   {
-    title: "Smart Reminders",
-    desc: "Chrome notifications before renewals: 7, 3, 1 days ahead, and on renewal day.",
-    icon: BellRing,
-    accent: "from-amber-500/20 to-orange-500/10",
-    badge: "Alerts",
+    title: "Email Integration",
+    desc: "Connect your email for reminder delivery. Set custom reminder schedule with 1, 3, and 7 day options.",
+    icon: Mail,
+    accent: "from-rose-500/20 to-red-500/10",
+    badge: "Email",
+    span: "col-span-2 sm:col-span-2",
+  },
+  {
+    title: "Pause, Resume & Edit",
+    desc: "Full control over your subscriptions easily pause, resume, or update details anytime with just a click.",
+    icon: Edit3,
+    accent: "from-purple-500/20 to-pink-500/10",
+    badge: "Control",
     span: "col-span-2 sm:col-span-2",
   },
   {
     title: "Privacy first",
-    desc: "API key and data stored locally in the browser and never sent to external servers.",
+    desc: "API key stored locally in the browser and never sent to external servers.",
     icon: ShieldCheck,
     accent: "from-emerald-500/20 to-teal-500/10",
     badge: "Local",
@@ -32,6 +40,14 @@ const features = [
     icon: ArrowDownUp,
     accent: "from-sky-500/20 to-indigo-500/10",
     badge: "Data",
+    span: "col-span-2 sm:col-span-2",
+  },
+  {
+    title: "Clear All Data",
+    desc: "Wipe everything in one click, subscriptions, reminder schedules, and local storage data for a completely fresh start.",
+    icon: Trash2,
+    accent: "from-red-500/20 to-orange-500/10",
+    badge: "Reset",
     span: "col-span-2 sm:col-span-2",
   },
 ];
