@@ -2,10 +2,10 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import Chrome from '../assets/chrome.svg';
-import extension1 from "../assets/extension1.png";
-import extension2 from "../assets/extension2.png";
-import extension3 from "../assets/extension3.png";
-import extension4 from "../assets/extension4.png";
+import extension1 from "../assets/extension1.webp";
+import extension2 from "../assets/extension2.webp";
+import extension3 from "../assets/extension3.webp";
+import extension4 from "../assets/extension4.webp";
 
 const images = [
     { src: extension1, label: "Dashboard View" },
@@ -33,6 +33,8 @@ const ExtensionCarousel = () => {
                                 key={index}
                                 src={images[index].src}
                                 alt={images[index].label}
+                                loading="lazy"
+                                decoding="async"
                                 initial={{ opacity: 0, x: 100 }}
                                 animate={{ opacity: 1, x: 0 }}
                                 exit={{ opacity: 0, x: -100 }}
