@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import Chrome from '../assets/chrome.svg';
@@ -16,9 +16,19 @@ const images = [
 
 const ExtensionCarousel = () => {
     const [index, setIndex] = useState(0);
+    
+    //First image (extension1.webp) renders instantly.
+    //Other images preload silently in useEffect, so when you navigate, they appear instantly with no flicker.
+    useEffect(() => {
+      images.forEach((img) => {
+        const image = new Image();
+        image.src = img.src;
+      });
+    }, []);
 
     const prevSlide = () => setIndex((index - 1 + images.length) % images.length);
     const nextSlide = () => setIndex((index + 1) % images.length);
+
 
     return (
         <section className="my-10">
@@ -33,7 +43,6 @@ const ExtensionCarousel = () => {
                                 key={index}
                                 src={images[index].src}
                                 alt={images[index].label}
-                                loading="lazy"
                                 decoding="async"
                                 initial={{ opacity: 0, x: 100 }}
                                 animate={{ opacity: 1, x: 0 }}
