@@ -3,6 +3,8 @@ import AppLayout from './layout/AppLayout';
 import Home from './pages/Home';
 import Privacy from './pages/Privacy';
 import PageNotFound from './components/PageNotFound';
+import PricePage from './pages/PricePage';
+import HowToUse from './pages/HowToUse';
 
 
 function App() {
@@ -19,6 +21,14 @@ function App() {
         {
           path: '/privacy',
           element: <Privacy/>
+        },
+        {
+          path: '/price',
+          element: <PricePage/>
+        },
+        {
+          path: '/use',
+          element: <HowToUse/>
         },
 
         //Catch-all route for 404 
