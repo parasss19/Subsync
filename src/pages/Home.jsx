@@ -9,12 +9,7 @@ import spotify from '../assets/spotify.svg'
 import cursor from '../assets/cursor.svg'
 import claude from '../assets/claude.svg'
 import FeaturesBento from '../components/FeaturesBento';
-import HowToUse from '../components/HowToUse';
-import extension1 from '../assets/extension1.png'
-import extension2 from '../assets/extension2.png'
-import extension3 from '../assets/extension3.png'
 import ExtensionCarousel from '../components/ExtensionCarousel';
-// import { ArcadeEmbed } from '../components/ArcadeEmbed';
 
 
 
@@ -46,12 +41,6 @@ const Home = () => {
     window.addEventListener("mousemove", handleMouseMove);
     return () => window.removeEventListener("mousemove", handleMouseMove);
   }, [mouseX, mouseY]);
-
-  const images = [
-    { src: extension1, label: "Dashboard View" },
-    { src: extension2, label: "Subscription Capture" },
-    { src: extension3, label: "Add Subscriptions" },
-  ];
 
 
 
@@ -142,15 +131,6 @@ const Home = () => {
      
       {/* Extension cards */}
       <ExtensionCarousel/>
-
-      {/* How to use steps */}
-      <HowToUse/>
-
-      {/* How to use video*/}
-      {/* <div className='flex flex-col gap-4 '>
-        <span className='text-sm font-bold text-white/90 bg-gray-600 w-fit mx-auto rounded-lg px-2 py-1'>Interactive Tutorial</span>
-        <ArcadeEmbed/>
-      </div> */}
 
       {/* Features */}
       <FeaturesBento/>
