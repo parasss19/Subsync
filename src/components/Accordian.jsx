@@ -15,9 +15,9 @@ const faqs = [
       "Yes! SubSync is free to install and use for managing subscriptions, tracking renewals, and receiving reminders.",
   },
   {
-    title: "Does SubSync store my data in the cloud?",
+    title: "Does SubSync store my API key in the cloud?",
     content:
-      "No, Data stays on your device, not our servers. Your subscription data and settings are stored locally in your browser.",
+      "No, your key stays on your device, not our servers.We store only the data required to send accurate reminders like subscription name, renewal date, price, your email, and reminder days. No sensitive personal data or API keys are stored in our database.",
   },
   {
     title: "Do I need an AI key to use it?",
@@ -52,14 +52,14 @@ const faqs = [
 
 
   return (
-    <div className="relative z-10 mt-10 mb-5 max-w-6xl mx-auto w-full px-6 pb-6">
+    <div className="relative z-10 mt-18 mb-5 max-w-6xl mx-auto w-full px-6 pb-6">
       <div className="flex flex-col md:flex-row md:gap-12">
         {/* Left side heading */}
         <div className="md:w-1/3 mb-6 md:mb-0">
-          <h3 className="text-2xl text-white font_instrument tracking-wider text-center md:text-left">
+          <h3 className="text-2xl text-white font-[Geist] font-bold tracking-wider text-center md:text-left">
             Frequently Asked Questions
           </h3>
-          <p className="mt-2 text-gray-400 text-sm font_instrument tracking-wider text-center md:text-left">
+          <p className="mt-2 text-gray-400 text-sm font-[Geist] tracking-wider text-center md:text-left">
             Everything you need to know about Instantly in one place.
           </p>
         </div>
