@@ -117,7 +117,7 @@ const Privacy = () => {
           <ul className="list-disc ml-6 mt-2">
             <li>
               <strong>Database:</strong> We store only the data required to send
-              accurate reminders — subscription details, your email, and reminder
+              accurate reminders like subscription name, price, renewal date, your email, and reminder
               days. No sensitive personal data or API keys are stored in our database.
             </li>
             <li>
