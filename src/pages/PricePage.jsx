@@ -2,7 +2,7 @@ import { CheckSquare, Heart, QrCode } from "lucide-react";
 import { motion } from "framer-motion";
 import { useState } from "react";
 import coding from "../assets/coding.gif";
-import qrCode from "../assets/qrCode.png";
+import qrCode from "../assets/qrcode.png";
 
 const freePlan = {
   name: "Free",
