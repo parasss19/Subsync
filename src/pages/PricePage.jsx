@@ -1,7 +1,6 @@
 import { CheckSquare, Heart, QrCode } from "lucide-react";
 import { motion } from "framer-motion";
 import { useState } from "react";
-import coding from "../assets/coding.gif";
 import qrCode from "../assets/qrcode.png";
 
 const freePlan = {
@@ -74,7 +73,7 @@ const PricePage = () => {
           {/* Gif */}
           <div className="flex justify-center mb-6">
             <img
-              src={coding}
+              src="https://res.cloudinary.com/dxxeks4o5/image/upload/v1758970468/downloaded_2_mstcnb.gif"
               alt="coding gif"
               className="rounded-lg w-[280px] sm:w-[350px]"
             />
