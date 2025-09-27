@@ -1,12 +1,7 @@
 import { Download, Settings2, CheckCircle2, LayoutGrid, Play } from "lucide-react";
 import Chrome from '../assets/chrome.svg';
-import setup from '../assets/setup.mp4';
-import importexport from '../assets/import_export.mp4';
-import addSub from '../assets/addSub.mp4';
-import aicapture from '../assets/aicapture.mp4';
 
 export default function HowToUse() {
-
   const useFlow = [
     { icon: Settings2, 
       title: "Setup your reminders", 
@@ -29,28 +24,36 @@ export default function HowToUse() {
   ];
 
   const tutorials = [
-    { 
-      title: "Setup & add settings", 
-      desc: "Learn how to install the Chrome extension, configure settings, and save changes for easy subscription management.", 
-      url: setup, 
-      category: "Getting Started" 
+    {
+      title: "Setup & add settings",
+      desc: "Learn how to install the Chrome extension, configure settings, and save changes for easy subscription management.",
+      videoUrl: "https://res.cloudinary.com/dxxeks4o5/video/upload/q_auto,f_auto/setup_u4gdmi.mp4",
+      posterUrl: "https://res.cloudinary.com/dxxeks4o5/video/upload/so_3,q_auto,f_auto,w_800/setup_u4gdmi.jpg",
+      category: "Getting Started"
     },
-    { title: "Add subscriptions manually", 
-      desc: "Quickly add subscriptions by entering details manually. You can edit, pause, resume and delete it. Perfect for full control over your data.", 
-      url: addSub, 
-      category: "Features" 
+    {
+      title: "Add subscriptions manually",
+      desc: "Quickly add subscriptions by entering details manually. You can edit, pause, resume and delete it. Perfect for full control over your data.",
+      videoUrl: "https://res.cloudinary.com/dxxeks4o5/video/upload/q_auto,f_auto/addSub_pd032o.mp4",
+      posterUrl: "https://res.cloudinary.com/dxxeks4o5/video/upload/so_3,q_auto,f_auto,w_800/addSub_pd032o.jpg",
+      category: "Features"
     },
-    { title: "Add using AI", 
-      desc: "Use Smart Capture AI to automatically detect and add subscriptions with minimal effort.", 
-      url: aicapture, 
-      category: "AI Features" 
+    {
+      title: "Add using AI",
+      desc: "Use Smart Capture AI to automatically detect and add subscriptions with minimal effort.",
+      videoUrl: "https://res.cloudinary.com/dxxeks4o5/video/upload/q_auto,f_auto/aicapture_e6fdsq.mp4",
+      posterUrl: "https://res.cloudinary.com/dxxeks4o5/video/upload/so_3,q_auto,f_auto,w_800/aicapture_e6fdsq.jpg",
+      category: "AI Features"
     },
-    { title: "Import and Export Data", 
-      desc: "Backup or transfer with JSON. Simple portability for peace of mind.", 
-      url: importexport, 
-      category: "Import-Export" 
+    {
+      title: "Import and Export Data",
+      desc: "Backup or transfer with JSON. Simple portability for peace of mind.",
+      videoUrl: "https://res.cloudinary.com/dxxeks4o5/video/upload/q_auto,f_auto/import_export_gm5yhh.mp4",
+      posterUrl: "https://res.cloudinary.com/dxxeks4o5/video/upload/so_3,q_auto,f_auto,w_800/import_export_gm5yhh.jpg",
+      category: "Import-Export"
     },
   ];
+
 
   return (
     <section className="mx-auto my-20 max-w-6xl px-6">
@@ -104,10 +107,11 @@ export default function HowToUse() {
                 <div className="w-full lg:w-3/5 relative">
                   <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-white/5 to-white/[0.02] p-1 backdrop-blur-sm border border-white/10 group-hover:border-white/20 transition-all duration-500">
                     <video
-                      src={video.url}
+                      src={video.videoUrl}
                       controls
-                      className="relative w-full aspect-video rounded-[1.375rem] object-cover"
                       preload="metadata"
+                      poster={video.posterUrl}
+                      className="relative w-full aspect-video rounded-[1.375rem] object-cover"
                     />
                   </div>
                 </div>
