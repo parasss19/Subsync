@@ -4,14 +4,6 @@ import logo from '../assets/logo.svg'
 const Header = () => {
   const navigate = useNavigate();
 
-  const handleScroll = () => {
-    const section = document.getElementById("howToUse");
-    if (section) {
-      section.scrollIntoView({ behavior: "smooth" });
-    }
-  };
-
-
   return (
     <div className="sticky top-5 z-20 mt-5 mb-4 py-[5px] px-3 rounded-xl bg-[#212121] flex items-center justify-between border border-[#353434]">
       {/* Left - Logo */}
@@ -26,10 +18,9 @@ const Header = () => {
 
       {/* Right */}
       <div className="flex gap-5 justify-center items-center">
-        {/* Price Page */}
-        <div className="flex items-center gap-2 sm:gap-4 text-gray-400 cursor-pointer font_instrument">
-          <span onClick={() => navigate('/use')} className=" text-white font-semibold font-[Geist] text-xs sm:text-lg bg-black/20 rounded-xl px-3 py-1 hover:scale-110 duration-200">Use</span>
-          <span onClick={() => navigate('/price')} className=" text-white font-semibold font-[Geist] text-xs sm:text-lg bg-black/20 rounded-xl px-3 py-1 hover:scale-110 duration-200">Price</span>
+        <div className="flex items-center gap-4 sm:gap-4 text-gray-400 cursor-pointer">
+          <span onClick={() => navigate('/use')} className="font_instrument tracking-wider text-white text-lg sm:text-xl hover:scale-110 duration-200">Use</span>
+          <span onClick={() => navigate('/price')} className="font_instrument tracking-wider text-white text-lg sm:text-xl hover:scale-110 duration-200">Price</span>
         </div>
 
         {/* install btn */}
