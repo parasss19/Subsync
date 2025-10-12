@@ -77,9 +77,8 @@ const Home = () => {
       <motion.div
         className="mt-14 mb-8 font-[Geist] flex flex-col items-center justify-center sm:px-8 text-center"
         initial={{ opacity: 0.2, y: 100 }}
+        animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
       >
         <div className="relative sm:my- px-4 sm:px-8 flex flex-col items-center font-[Geist]">
           {/* badge */}

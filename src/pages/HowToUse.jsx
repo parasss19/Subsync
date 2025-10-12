@@ -63,8 +63,7 @@ export default function HowToUse() {
       className="mt-20 mb-10"
       initial={{ opacity: 0.2, y: 100 }}
       transition={{ duration: 1 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true }}
+      animate={{ opacity: 1, y: 0 }}
     >
       <section className="mx-auto my-20 max-w-6xl px-6">
 

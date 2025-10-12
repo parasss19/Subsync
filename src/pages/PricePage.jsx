@@ -24,9 +24,8 @@ const PricePage = () => {
     <motion.div
       className="mt-20 mb-10"
       initial={{ opacity: 0.2, y: 100 }}
+      animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 1 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true }}
     >
       {/* Heading */}
       <div className="mb-[60px] font-[Geist] flex flex-col items-center justify-center sm:px-8 text-center">
