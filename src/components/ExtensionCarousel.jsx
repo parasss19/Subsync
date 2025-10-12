@@ -35,7 +35,6 @@ const ExtensionCarousel = () => {
             <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center px-6">
 
                 {/* Left: Carousel */}
-                {/* Left: Carousel */}
                 <div className="flex justify-center w-full px-4 sm:px-6">
                     <div className="relative flex items-center justify-center px-6 py-6 rounded-3xl border border-white/10 shadow-lg bg-white/[0.02] w-full max-w-[420px]">
                         <AnimatePresence mode="wait">
@@ -87,10 +86,10 @@ const ExtensionCarousel = () => {
 
                 {/* Right: Text content */}
                 <div className="space-y-4 sm:space-y-6 md:space-y-6 flex flex-col justify-center text-center md:text-left">
-                    <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 dark:text-white leading-snug">
+                    <h2 className="text-white text-2xl sm:text-3xl md:text-4xl font-bold">
                         Manage Your Subscriptions Smarter
                     </h2>
-                    <p className="text-gray-600 dark:text-gray-300 text-base sm:text-lg md:text-lg leading-relaxed max-w-md md:max-w-full mx-auto md:mx-0">
+                    <p className="text-white text-base sm:text-lg md:text-lg leading-relaxed max-w-md md:max-w-full mx-auto md:mx-0">
                         Subsync helps you capture subscriptions instantly, manage all your
                         payments in one place, and set up reminders so you never miss a
                         renewal again.
