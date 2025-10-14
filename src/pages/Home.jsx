@@ -42,8 +42,6 @@ const Home = () => {
     return () => window.removeEventListener("mousemove", handleMouseMove);
   }, [mouseX, mouseY]);
 
-
-
   return (
     <>
       {/* floating icons */}
@@ -111,7 +109,7 @@ const Home = () => {
           {/* CTA btn*/}
           <div className="mt-8">
             <button
-              onClick={() => navigate("#")}
+              onClick= {() => window.open("https://chromewebstore.google.com/detail/subsync-ai/kgadkpmcmkdjonlcchbpolmgdakafhjn","_blank")}
               className="cursor-pointer bg-black/60  text-yellow-300 text-sm sm:text-lg px-3 py-2 sm:px-4 sm:py-2 rounded-lg shadow-md transition-transform duration-150 active:scale-95"
             >
               <span className='tracking-wider flex items-center font-medium justify-center gap-2'>

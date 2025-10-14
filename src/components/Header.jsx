@@ -26,7 +26,7 @@ const Header = () => {
         {/* install btn */}
         <div className="">
           <button
-            onClick={() => navigate("/auth")}
+            onClick= {() => window.open("https://chromewebstore.google.com/detail/subsync-ai/kgadkpmcmkdjonlcchbpolmgdakafhjn","_blank")}
             className="cursor-pointer bg-black/60 text-yellow-300 text-sm sm:text-lg px-2 py-1.5 sm:px-4 sm:py-1.5 rounded-lg shadow-md transition-transform duration-150 active:scale-95"
           >
             <span className="font_instrument tracking-wider flex items-center font-medium justify-center gap-1">
