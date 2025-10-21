@@ -79,8 +79,17 @@ const Home = () => {
         transition={{ duration: 1 }}
       >
         <div className="relative sm:my- px-4 sm:px-8 flex flex-col items-center font-[Geist]">
+          {/* peerlist badge */}
+          <a href="https://peerlist.io/paras19/project/subsync" target="_blank" rel="noreferrer">
+				    <img
+					    src="https://peerlist.io/api/v1/projects/embed/PRJHGNQLGQPREMG7N2A7R6BB7LOQJG?showUpvote=true&theme=dark"
+					    alt="Subsync"
+              className='w-[180px] h-[60px] sm:w-[220px] sm:h-[70px]'
+				    />
+			    </a>
+
           {/* badge */}
-          <div className="font-custom-font inline-flex items-center mb-3 py-0.5 px-3 border border-white/40 rounded-full  shadow-md hover:shadow-lg hover:-translate-y-1 transition group sm:px-4 sm:py-1">
+          <div className="font-custom-font inline-flex items-center mt-4 mb-3 py-0.5 px-3 border border-white/40 rounded-full  shadow-md hover:shadow-lg hover:-translate-y-1 transition group sm:px-4 sm:py-1">
             <p className="text-xs sm:text-sm text-white font-light flex gap-2 items-center justify-center">
                Manage Subscriptions in minutes 
               <img className='inline' width="20" height="20" src="https://img.icons8.com/3d-fluency/50/clock.png" alt="clock"/>
