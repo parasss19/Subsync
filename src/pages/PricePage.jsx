@@ -94,7 +94,7 @@ const PricePage = () => {
               rel="noopener noreferrer"
               className="bg-yellow-400 hover:bg-yellow-500 text-black px-4 py-2 rounded-lg font-medium shadow-md"
             >
-              💻Buy Me a Mackbook
+              💻Buy Me a Macbook
             </a>
             <button
               onClick={() => setShowQR(!showQR)}
